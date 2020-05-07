@@ -28,11 +28,9 @@ int main (int argc, char *argv[]){
   for (int i = 0; i < g; i++) {
     int temp = rank * g + 1 + i;
     local_sum += temp;
-    //local_sum += drand48();
   }
 
 
-  //
   int d = log(size) / log(2);
   for (int j = 0; j < d; j++) {
     int p = pow(2, j);
